@@ -1,0 +1,32 @@
+{
+	"@type": "Neuron_Population",
+	"@explicit": true,
+	"a": {},
+	"uri": {},
+	"has-soma-distribution": {
+		"@type": "Distribution_of_Somata",
+		"@explicit": true,
+		"uri": {},
+		"a": {},
+		"rcc8-contained-in": {	
+			"@type": "Named_Regional_Part_of_Nervous_System",
+			"@explicit": true,
+			"uri": {},
+			"a": {},
+			"name": {}
+		}
+	},
+	"has-terminal-distribution": {
+		"@type": "Distribution_of_Terminal_Boutons",
+		"@explicit": true,
+		"uri": {},
+		"a": {},
+		"rcc8-contained-in": {	
+			"@type": "Named_Regional_Part_of_Nervous_System",
+			"@explicit": true,
+			"uri": {},
+			"a": {},
+			"name": {}
+		}
+	}
+}

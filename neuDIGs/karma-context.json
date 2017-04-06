@@ -1,0 +1,194 @@
+{
+    "@context": {
+        "3D_Neuroanatomical_Volume": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#3D_Neuroanatomical_Volume", 
+            "@type": "@id"
+        }, 
+        "4_point_ordinal_measure": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#4_point_ordinal_measure", 
+            "@type": "@id"
+        }, 
+        "Axonal_Segment": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Axonal_Segment", 
+            "@type": "@id"
+        }, 
+        "Behavior": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Behavior", 
+            "@type": "@id"
+        }, 
+        "ChemicalEntity": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#ChemicalEntity", 
+            "@type": "@id"
+        }, 
+        "Dendritic_Segment": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Dendritic_Segment", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Axonal_Segments": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Axonal_Segments", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Dendrite_Segments": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Dendrite_Segments", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Receptors": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Receptors", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Somata": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Somata", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Subcellular_Neuronal_Components": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Subcellular_Neuronal_Components", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Synapses": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Synapses", 
+            "@type": "@id"
+        }, 
+        "Distribution_of_Terminal_Boutons": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Distribution_of_Terminal_Boutons", 
+            "@type": "@id"
+        }, 
+        "Named_Regional_Part_of_Nervous_System": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Named_Regional_Part_of_Nervous_System", 
+            "@type": "@id"
+        }, 
+        "Neuroanatomical_Partonomy": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Neuroanatomical_Partonomy", 
+            "@type": "@id"
+        }, 
+        "Neuron": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Neuron", 
+            "@type": "@id"
+        }, 
+        "Neuron_Population": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Neuron_Population", 
+            "@type": "@id"
+        }, 
+        "Receptor": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Receptor", 
+            "@type": "@id"
+        }, 
+        "Soma": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Soma", 
+            "@type": "@id"
+        }, 
+        "Species_Taxon": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Species_Taxon", 
+            "@type": "@id"
+        }, 
+        "Subcellular_Neuronal_Component": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Subcellular_Neuronal_Component", 
+            "@type": "@id"
+        }, 
+        "Synapse": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Synapse", 
+            "@type": "@id"
+        }, 
+        "Terminal_Bouton": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#Terminal_Bouton", 
+            "@type": "@id"
+        }, 
+        "a": "@type", 
+        "activates": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#activates", 
+            "@type": "@id"
+        }, 
+        "binds": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#binds", 
+            "@type": "@id"
+        }, 
+        "collection-of": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#collection-of", 
+            "@type": "@id"
+        }, 
+        "has-abbreviation": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#has-abbreviation", 
+            "@type": "@id"
+        }, 
+        "has-part": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#has-part", 
+            "@type": "@id"
+        }, 
+        "has-soma-distribution": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#has-soma-distribution", 
+            "@type": "@id"
+        }, 
+        "has-terminal-distribution": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#has-terminal-distribution", 
+            "@type": "@id"
+        }, 
+        "inhibits": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#inhibits", 
+            "@type": "@id"
+        }, 
+        "is-about": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#is-about", 
+            "@type": "@id"
+        }, 
+        "is-in-collection": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#is-in-collection", 
+            "@type": "@id"
+        }, 
+        "is-involved-in-mechanism": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#is-involved-in-mechanism", 
+            "@type": "@id"
+        }, 
+        "is-part-of-neuron-population": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#is-part-of-neuron-population", 
+            "@type": "@id"
+        }, 
+        "local-identifier": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#local-identifier", 
+            "@type": "@id"
+        }, 
+        "ordinal-count": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#ordinal-count", 
+            "@type": "@id"
+        }, 
+        "part-of": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#part-of", 
+            "@type": "@id"
+        }, 
+        "rcc8-adjacent-to": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-adjacent-to", 
+            "@type": "@id"
+        }, 
+        "rcc8-contained-in": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-contained-in", 
+            "@type": "@id"
+        }, 
+        "rcc8-contains": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-contains", 
+            "@type": "@id"
+        }, 
+        "rcc8-disconnected": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-disconnected", 
+            "@type": "@id"
+        }, 
+        "rcc8-equals": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-equals", 
+            "@type": "@id"
+        }, 
+        "rcc8-overlaps": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-overlaps", 
+            "@type": "@id"
+        }, 
+        "rcc8-spatial-relation": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-spatial-relation", 
+            "@type": "@id"
+        }, 
+        "rcc8-tangential-proper-part": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-tangential-proper-part", 
+            "@type": "@id"
+        }, 
+        "rcc8-tangential-proper-part-inverse": {
+            "@id": "http://bmkeg.isi.edu/neuDIGs#rcc8-tangential-proper-part-inverse", 
+            "@type": "@id"
+        }, 
+        "uri": "@id"
+    }
+}
