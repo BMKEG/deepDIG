@@ -1,0 +1,242 @@
+@prefix : <http://purl.org/ske/kefed/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/ske/kefed/> a owl:Ontology ;
+	owl:versionIRI :1.0 ;
+	owl:imports <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ske/kefed/kefed_obi_0000153
+
+:kefed_obi_0000153 a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "If a part - whole relation is ordered, this property denotes the part that occurs first in that ordering" ;
+	<http://purl.obolibrary.org/obo/IAO_0000119> "Gully Burns" ;
+	rdfs:label "has first part" .
+# 
+# http://purl.org/ske/kefed/kefed_obi_0000154
+
+:kefed_obi_0000154 a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "If a part - whole relation is ordered, this property denotes that part is first in that ordering" ;
+	<http://purl.obolibrary.org/obo/IAO_0000119> "Gully Burns" ;
+	rdfs:label "is first part of" .
+# 
+# http://purl.org/ske/kefed/provides_input_to
+
+:provides_input_to a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002222> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "This property specifies a 'planned_process' that sends its 'specified_input_object' to a following 'planned_process' as a transitive property." ;
+	<http://purl.obolibrary.org/obo/IAO_0000119> "Gully Burns" .
+# 
+# http://purl.org/ske/kefed/receives_input_from
+
+:receives_input_from a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000062> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "This property specifies a 'planned_process' that receives a 'specified_input_from' another 'planned_process' as a transitive property." ;
+	<http://purl.obolibrary.org/obo/IAO_0000119> "Gully Burns" .
+# 
+# http://purl.org/ske/kefed/1.0/parameterizes
+
+<http://purl.org/ske/kefed/1.0/parameterizes> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "A study design variable (constant, independent, or dependent) that is applied to a specific information content entity, material entity or planned process in the context of a specific study design." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ske/kefed/OWLClass_0000112
+
+:OWLClass_0000112 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000951> ;
+	rdfs:label "Study design for administration of epitope in-vivo to prevent or reduce disease" .
+# 
+# http://purl.org/ske/kefed/kefed_obi_0000156
+
+:kefed_obi_0000156 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+	rdfs:comment "The historical provenance of a data item based on the design of the process that generated the data. Based on the 'Knowledge Engineering from Experimental Design' formalism, this may captured in shorthand by describing the parameters that were used in the generative process."@en ;
+	rdfs:label "provenance_context"@en .
+# 
+# http://purl.org/ske/kefed/obi_kefed_0000113
+
+:obi_kefed_0000113 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "A measurement datum that is a name (or similar identifing code) of a thing" ;
+	rdfs:label "name measurement datum" .
+# 
+# http://purl.org/ske/kefed/obi_kefed_0000114
+
+:obi_kefed_0000114 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "A measurement datum that is expressed as natural language" ;
+	rdfs:label "natural language datum" .
+# 
+# http://purl.org/ske/kefed/obi_kefed_0000115
+
+:obi_kefed_0000115 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001933> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "A value specification that is based on names or other identifying strings" ;
+	rdfs:label "nominal value specification" .
+# 
+# http://purl.org/ske/kefed/obi_kefed_0000116
+
+:obi_kefed_0000116 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001933> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "a value specification that uses terms from an ontology as its specified values" ;
+	rdfs:label "ontological term value specfication" .
+# 
+# http://purl.org/ske/kefed/obi_kefed_0000117
+
+:obi_kefed_0000117 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001933> ;
+	<http://purl.obolibrary.org/obo/IAO_0000115> "a value specification that specifies values expressed in natural language." ;
+	rdfs:label "natural language value specification" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+
+_:genid1 a owl:AllDisjointClasses ;
+	owl:members _:genid30 .
+
+_:genid30 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/IAO_0000443> ;
+	rdf:rest _:genid29 .
+
+_:genid29 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/IAO_0000572> ;
+	rdf:rest _:genid28 .
+
+_:genid28 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/IAO_0000574> ;
+	rdf:rest _:genid27 .
+
+_:genid27 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/IAO_0000575> ;
+	rdf:rest _:genid26 .
+
+_:genid26 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/IAO_0000580> ;
+	rdf:rest _:genid25 .
+
+_:genid25 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000066> ;
+	rdf:rest _:genid24 .
+
+_:genid24 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000338> ;
+	rdf:rest _:genid23 .
+
+_:genid23 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000694> ;
+	rdf:rest _:genid22 .
+
+_:genid22 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000804> ;
+	rdf:rest _:genid21 .
+
+_:genid21 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000807> ;
+	rdf:rest _:genid20 .
+
+_:genid20 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000810> ;
+	rdf:rest _:genid19 .
+
+_:genid19 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000818> ;
+	rdf:rest _:genid18 .
+
+_:genid18 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000826> ;
+	rdf:rest _:genid17 .
+
+_:genid17 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000840> ;
+	rdf:rest _:genid16 .
+
+_:genid16 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000841> ;
+	rdf:rest _:genid15 .
+
+_:genid15 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000842> ;
+	rdf:rest _:genid14 .
+
+_:genid14 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000907> ;
+	rdf:rest _:genid13 .
+
+_:genid13 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0000931> ;
+	rdf:rest _:genid12 .
+
+_:genid12 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0001007> ;
+	rdf:rest _:genid11 .
+
+_:genid11 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0001932> ;
+	rdf:rest _:genid10 .
+
+_:genid10 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0001944> ;
+	rdf:rest _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0001953> ;
+	rdf:rest _:genid8 .
+
+_:genid8 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0200111> ;
+	rdf:rest _:genid7 .
+
+_:genid7 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0302908> ;
+	rdf:rest _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0302910> ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0302911> ;
+	rdf:rest _:genid4 .
+
+_:genid4 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0600009> ;
+	rdf:rest _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OBI_0600015> ;
+	rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/OGMS_0000090> ;
+	rdf:rest rdf:nil .
+# 
+# Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
